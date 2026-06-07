@@ -159,6 +159,7 @@ venv.bak/
 .github/*.md
 # reference/*.pdf
 # reference/*.md
+CLAUDE.md
 
 
 # Spyder project settings
