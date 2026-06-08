@@ -60,22 +60,29 @@ The system is a three-layer AI pipeline. Layer 0 extracts probable conditions fr
 | `layer0_output/l0_condition_estimates.csv` | `estimated_total_cases` per facility/period/condition |
 | `master/facilities.csv` | `lead_time_days`, `rainy_season_access`, `accessibility_score`, `has_cold_chain` |
 | `master/drugs.csv` | `drug_id`, `standard_daily_dose`, `treatment_duration_days`, `requires_cold_chain` |
-| `master/kb_condition_drug.csv` | `condition_id`, `drug_id`, `trimester_applicable`, `priority` |
-| `transactional/context_monthly.csv` | `facility_id`, `period`, `pregnant_t1`, `pregnant_t2`, `pregnant_t3`, `season` |
+| `master/kb_condition_drug.csv` | `condition_id`, `drug_id` |
+| `transactional/context_monthly.csv` | `facility_id`, `period`, `season` |
 | `transactional/stock_monthly.csv` | `facility_id`, `drug_id`, `period`, `closing_stock` |
 
 **Processing:**
 
-- TBD @deira
+- **Categorical encoding:** `facility_id`, `drug_id`, and `rainy_season_access` are integer-encoded with saved `LabelEncoder` instances (`le_facility.pkl`, `drug_enc.pkl`, `le_rainy.pkl`)
+- **Static exog lookup:** time-invariant attributes per (facility, drug) — `lead_time_days`, `rainy_season_enc`, `accessibility_score`, `standard_daily_dose`, `treatment_duration_days` — cached in `static_exog_lookup.csv`
+- **Feature engineering:** lag bank of `closing_stock` at 1, 2, 3, 6, 12 months; lag bank of `estimated_total_cases` and derived `estimated_consumption` at 1–3 months; rolling mean & std at windows 3, 6, 12 months (computed from lag-1 to avoid leakage); cyclic month encoding (`sin`/`cos`); binary flags `is_november`, `is_high_season` (Oct–Dec), `is_low_season` (Apr); interaction terms `cases × accessibility_score`, `lead_time × accessibility_score`, `standard_daily_dose × treatment_duration_days`, `lag_1 × accessibility_score`
+- **Target transform:** `log1p(closing_stock)` before training; `expm1` after prediction; predictions clipped to ≥ 0
+- **Model:** global XGBoost (`n_estimators=1500`, `learning_rate=0.02`, `max_depth=6`, `min_child_weight=5`, `subsample=0.85`, `colsample_bytree=0.85`); trained on all (facility, drug) combinations jointly; early stopping on log-RMSE with patience 50
+- **Train/val split:** cutoff `2024-11-01`; last 3 months (Dec 2024, Jan 2025, Feb 2025) held out; November 2024 spike fully in training
+- **Buffer (rule-based, post-inference):** baseline 20%; +5 pp if `lead_time_days > 7`, +10 pp if `> 14`; +5 pp if `accessibility_score < 0.75`, +10 pp if `< 0.5`
 
 **Writes:**
 
 | File | Description |
 | --- | --- |
-| `layer1_mock/l1_forecast_mock.csv` | `facility_id`, `forecast_period`, `drug_id`, `forecast_demand`, `buffer_pct`, `buffer_units`, `total_requirement`, `current_stock`, `demand_lower`, `demand_upper` |
-| `layer1_mock/ifk_stock_mock.csv` | `drug_id`, `available_stock` — IFK warehouse supply per drug |
-
-The current notebook (`03_layer1_mock.ipynb`) is just a rule-based mock
+| `layer1_output/l1_forecast.csv` | `facility_id`, `forecast_period`, `drug_id`, `forecast_demand`, `buffer_pct`, `buffer_units`, `total_requirement`, `current_stock` |
+| `model/xgboost_drug_forecast_v3.json` | Trained XGBoost model |
+| `model/static_exog_lookup.csv` | Time-invariant feature lookup per (facility, drug) |
+| `model/feature_cols.pkl` | Ordered feature column list for inference |
+| `model/le_facility.pkl` / `le_drug.pkl` / `le_rainy.pkl` | Fitted label encoders |
 
 ---
 
@@ -118,7 +125,7 @@ The current notebook (`03_layer1_mock.ipynb`) is just a rule-based mock
 | --- | --- | --- |
 | `notebooks/01_data_simulator.ipynb` | Data | Synthetic master data + 36-month transaction history |
 | `notebooks/02_layer0_extraction.ipynb` | L0 | NLP symptom extraction + Bayesian condition scoring |
-| `notebooks/03_layer1_mock.ipynb` | L1 | Mock demand forecast (teammate's real L1 slots in here) |
+| `notebooks/03_layer1_forecast.ipynb` | L1 | XGBoost demand forecasting model — training, evaluation, and 1-month-ahead forecast |
 | `notebooks/04_layer2_allocation.ipynb` | L2 | MILP allocation + LLM explanation generation |
 
 ---
@@ -140,7 +147,7 @@ The Layer 0 → Layer 1 contract is `l0_condition_estimates.csv`: posterior case
 | Component | Choice | Rationale |
 | --- | --- | --- |
 | Symptom extraction | Qwen3-4B-Instruct 4-bit NF4, zero-shot | Runs on T4; CPU fallback = keyword regex |
-| Demand forecasting | TBD (teammate's module) | Gradient boosting or time-series model; interfaces via `l0_condition_estimates.csv` |
+| Demand forecasting | XGBoost (global model, log1p target) | Single model across all facility-drug combos; lag + rolling + calendar + interaction features; MAE ~109 units, R² 0.907 on held-out 3-month validation |
 | Allocation core | PuLP MILP + CBC solver | Deterministic, auditable, handles equity constraints explicitly |
 | Equity objective | Per-drug maximin, `ALPHA_EQUITY=25` | Prevents the optimizer from ignoring low-volume remote facilities |
 | Synthetic data | Rule-based probabilistic simulator | Enforces clinical/geographic constraints; reproducible at `SEED=42` |
