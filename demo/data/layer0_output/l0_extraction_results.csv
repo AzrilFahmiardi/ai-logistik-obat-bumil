@@ -1,0 +1,814 @@
+anamnesis_id,facility_id,period,extracted_symptoms,min_confidence,hitl_flag,validated_symptoms,extraction_model
+ANM-000001,PKM-001,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000002,PKM-001,2025-01-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000003,PKM-001,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000004,PKM-001,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000005,PKM-001,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000006,PKM-001,2025-02-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000007,PKM-001,2025-03-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000008,PKM-001,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000009,PKM-001,2025-04-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000010,PKM-001,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G04""]",keyword-baseline
+ANM-000011,PKM-001,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000012,PKM-001,2025-07-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000013,PKM-001,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000014,PKM-001,2025-07-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06""]",keyword-baseline
+ANM-000015,PKM-001,2025-07-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000016,PKM-001,2025-07-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G12""]",keyword-baseline
+ANM-000017,PKM-001,2025-08-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G05""]",keyword-baseline
+ANM-000018,PKM-001,2025-08-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000019,PKM-001,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000020,PKM-001,2025-11-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000021,PKM-001,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000022,PKM-001,2025-11-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G08"", ""G14""]",keyword-baseline
+ANM-000023,PKM-002,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000024,PKM-002,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000025,PKM-002,2025-01-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G09""]",keyword-baseline
+ANM-000026,PKM-002,2025-01-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06""]",keyword-baseline
+ANM-000027,PKM-002,2025-01-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000028,PKM-002,2025-02-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000029,PKM-002,2025-02-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000030,PKM-002,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000031,PKM-002,2025-05-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G12""]",keyword-baseline
+ANM-000032,PKM-002,2025-05-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000033,PKM-002,2025-06-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000034,PKM-002,2025-07-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000035,PKM-002,2025-08-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000036,PKM-002,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G15""]",keyword-baseline
+ANM-000037,PKM-002,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000038,PKM-002,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G09""]",keyword-baseline
+ANM-000039,PKM-002,2025-09-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06""]",keyword-baseline
+ANM-000040,PKM-002,2025-09-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000041,PKM-002,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000042,PKM-002,2025-10-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G04"", ""G11""]",keyword-baseline
+ANM-000043,PKM-002,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000044,PKM-002,2025-10-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G08""]",keyword-baseline
+ANM-000045,PKM-002,2025-10-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000046,PKM-002,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000047,PKM-002,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000048,PKM-002,2025-11-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000049,PKM-002,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000050,PKM-002,2025-12-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000051,PKM-003,2025-01-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000052,PKM-003,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000053,PKM-003,2025-01-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G08"", ""G10""]",keyword-baseline
+ANM-000054,PKM-003,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G10""]",keyword-baseline
+ANM-000055,PKM-003,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000056,PKM-003,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000057,PKM-003,2025-02-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000058,PKM-003,2025-02-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000059,PKM-003,2025-02-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000060,PKM-003,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000061,PKM-003,2025-03-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000062,PKM-003,2025-03-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G09""]",keyword-baseline
+ANM-000063,PKM-003,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000064,PKM-003,2025-03-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000065,PKM-003,2025-03-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G14""]",keyword-baseline
+ANM-000066,PKM-003,2025-04-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03"", ""G04"", ""G12""]",keyword-baseline
+ANM-000067,PKM-003,2025-05-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000068,PKM-003,2025-05-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000069,PKM-003,2025-06-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000070,PKM-003,2025-06-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000071,PKM-003,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000072,PKM-003,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000073,PKM-003,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000074,PKM-003,2025-08-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G10""]",keyword-baseline
+ANM-000075,PKM-003,2025-08-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000076,PKM-003,2025-08-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000077,PKM-003,2025-09-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000078,PKM-003,2025-10-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000079,PKM-003,2025-10-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000080,PKM-003,2025-10-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000081,PKM-003,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000082,PKM-003,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000083,PKM-003,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000084,PKM-003,2025-12-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000085,PKM-003,2025-12-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000086,PKM-004,2025-01-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000087,PKM-004,2025-01-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000088,PKM-004,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G04"", ""G11""]",keyword-baseline
+ANM-000089,PKM-004,2025-02-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000090,PKM-004,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000091,PKM-004,2025-05-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000092,PKM-004,2025-06-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03"", ""G10""]",keyword-baseline
+ANM-000093,PKM-004,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000094,PKM-004,2025-07-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000095,PKM-004,2025-07-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000096,PKM-004,2025-07-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000097,PKM-004,2025-08-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000098,PKM-004,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000099,PKM-004,2025-08-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G08"", ""G12""]",keyword-baseline
+ANM-000100,PKM-004,2025-08-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000101,PKM-004,2025-09-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000102,PKM-004,2025-10-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000103,PKM-004,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000104,PKM-004,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G10""]",keyword-baseline
+ANM-000105,PKM-004,2025-11-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G08""]",keyword-baseline
+ANM-000106,PKM-004,2025-12-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06""]",keyword-baseline
+ANM-000107,PKM-005,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000108,PKM-005,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000109,PKM-005,2025-03-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000110,PKM-005,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000111,PKM-005,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000112,PKM-005,2025-04-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000113,PKM-005,2025-05-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G04""]",keyword-baseline
+ANM-000114,PKM-005,2025-05-01,"[{""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G12""]",keyword-baseline
+ANM-000115,PKM-005,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000116,PKM-005,2025-06-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000117,PKM-005,2025-07-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000118,PKM-005,2025-07-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000119,PKM-005,2025-07-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000120,PKM-005,2025-08-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000121,PKM-005,2025-08-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000122,PKM-005,2025-09-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G10""]",keyword-baseline
+ANM-000123,PKM-005,2025-09-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000124,PKM-005,2025-09-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000125,PKM-005,2025-10-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000126,PKM-005,2025-10-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000127,PKM-005,2025-10-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000128,PKM-005,2025-11-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000129,PKM-005,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000130,PKM-005,2025-11-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000131,PKM-005,2025-11-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G10""]",keyword-baseline
+ANM-000132,PKM-005,2025-11-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000133,PKM-005,2025-12-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000134,PKM-005,2025-12-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000135,PKM-006,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G04"", ""G09""]",keyword-baseline
+ANM-000136,PKM-006,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000137,PKM-006,2025-01-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G13""]",keyword-baseline
+ANM-000138,PKM-006,2025-01-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000139,PKM-006,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000140,PKM-006,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G07""]",keyword-baseline
+ANM-000141,PKM-006,2025-02-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000142,PKM-006,2025-02-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000143,PKM-006,2025-02-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000144,PKM-006,2025-03-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000145,PKM-006,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04"", ""G11""]",keyword-baseline
+ANM-000146,PKM-006,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000147,PKM-006,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000148,PKM-006,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000149,PKM-006,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G09""]",keyword-baseline
+ANM-000150,PKM-006,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000151,PKM-006,2025-07-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000152,PKM-006,2025-08-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000153,PKM-006,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000154,PKM-006,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000155,PKM-006,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000156,PKM-006,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000157,PKM-006,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000158,PKM-006,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G13""]",keyword-baseline
+ANM-000159,PKM-006,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000160,PKM-006,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000161,PKM-006,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000162,PKM-006,2025-11-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000163,PKM-006,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000164,PKM-006,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000165,PKM-006,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000166,PKM-006,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03""]",keyword-baseline
+ANM-000167,PKM-006,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000168,PKM-006,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000169,PKM-006,2025-12-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000170,PKM-006,2025-12-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000171,PKM-007,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03""]",keyword-baseline
+ANM-000172,PKM-007,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000173,PKM-007,2025-01-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G14""]",keyword-baseline
+ANM-000174,PKM-007,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000175,PKM-007,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000176,PKM-007,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000177,PKM-007,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000178,PKM-007,2025-01-01,"[{""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G12""]",keyword-baseline
+ANM-000179,PKM-007,2025-01-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G12"", ""G14""]",keyword-baseline
+ANM-000180,PKM-007,2025-02-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000181,PKM-007,2025-02-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03"", ""G04"", ""G09""]",keyword-baseline
+ANM-000182,PKM-007,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000183,PKM-007,2025-02-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000184,PKM-007,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000185,PKM-007,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000186,PKM-007,2025-02-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G15""]",keyword-baseline
+ANM-000187,PKM-007,2025-03-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000188,PKM-007,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000189,PKM-007,2025-03-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G08"", ""G11""]",keyword-baseline
+ANM-000190,PKM-007,2025-03-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000191,PKM-007,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G13""]",keyword-baseline
+ANM-000192,PKM-007,2025-04-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000193,PKM-007,2025-04-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000194,PKM-007,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000195,PKM-007,2025-05-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09"", ""G10""]",keyword-baseline
+ANM-000196,PKM-007,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000197,PKM-007,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G15""]",keyword-baseline
+ANM-000198,PKM-007,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G13""]",keyword-baseline
+ANM-000199,PKM-007,2025-06-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000200,PKM-007,2025-06-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000201,PKM-007,2025-06-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000202,PKM-007,2025-06-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000203,PKM-007,2025-07-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000204,PKM-007,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000205,PKM-007,2025-07-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G11""]",keyword-baseline
+ANM-000206,PKM-007,2025-08-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G04""]",keyword-baseline
+ANM-000207,PKM-007,2025-08-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G09""]",keyword-baseline
+ANM-000208,PKM-007,2025-09-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000209,PKM-007,2025-10-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G08""]",keyword-baseline
+ANM-000210,PKM-007,2025-10-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000211,PKM-007,2025-10-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000212,PKM-007,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000213,PKM-007,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000214,PKM-007,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000215,PKM-007,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000216,PKM-008,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000217,PKM-008,2025-01-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G05""]",keyword-baseline
+ANM-000218,PKM-008,2025-01-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G05""]",keyword-baseline
+ANM-000219,PKM-008,2025-01-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G06""]",keyword-baseline
+ANM-000220,PKM-008,2025-01-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G12""]",keyword-baseline
+ANM-000221,PKM-008,2025-01-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000222,PKM-008,2025-01-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000223,PKM-008,2025-01-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000224,PKM-008,2025-01-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000225,PKM-008,2025-02-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03""]",keyword-baseline
+ANM-000226,PKM-008,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000227,PKM-008,2025-04-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000228,PKM-008,2025-04-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G07"", ""G15""]",keyword-baseline
+ANM-000229,PKM-008,2025-04-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000230,PKM-008,2025-04-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000231,PKM-008,2025-04-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000232,PKM-008,2025-04-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000233,PKM-008,2025-04-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000234,PKM-008,2025-05-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04"", ""G14""]",keyword-baseline
+ANM-000235,PKM-008,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000236,PKM-008,2025-05-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000237,PKM-008,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000238,PKM-008,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000239,PKM-008,2025-06-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G15""]",keyword-baseline
+ANM-000240,PKM-008,2025-06-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000241,PKM-008,2025-06-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000242,PKM-008,2025-06-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000243,PKM-008,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000244,PKM-008,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000245,PKM-008,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000246,PKM-008,2025-09-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09"", ""G10""]",keyword-baseline
+ANM-000247,PKM-008,2025-09-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000248,PKM-008,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000249,PKM-008,2025-10-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000250,PKM-008,2025-11-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000251,PKM-008,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000252,PKM-008,2025-12-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06""]",keyword-baseline
+ANM-000253,PKM-008,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000254,PKM-008,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000255,PKM-008,2025-12-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000256,PKM-009,2025-01-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000257,PKM-009,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03"", ""G04""]",keyword-baseline
+ANM-000258,PKM-009,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000259,PKM-009,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000260,PKM-009,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000261,PKM-009,2025-04-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000262,PKM-009,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000263,PKM-009,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000264,PKM-009,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000265,PKM-009,2025-07-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09""]",keyword-baseline
+ANM-000266,PKM-009,2025-07-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000267,PKM-009,2025-08-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G05""]",keyword-baseline
+ANM-000268,PKM-009,2025-08-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000269,PKM-009,2025-09-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000270,PKM-009,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000271,PKM-009,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000272,PKM-009,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03""]",keyword-baseline
+ANM-000273,PKM-009,2025-11-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G05""]",keyword-baseline
+ANM-000274,PKM-009,2025-12-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03""]",keyword-baseline
+ANM-000275,PKM-009,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000276,PKM-009,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03""]",keyword-baseline
+ANM-000277,PKM-009,2025-12-01,[],0.0,True,"[""G01""]",keyword-baseline
+ANM-000278,PKM-010,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G06""]",keyword-baseline
+ANM-000279,PKM-010,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000280,PKM-010,2025-01-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000281,PKM-010,2025-02-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000282,PKM-010,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000283,PKM-010,2025-02-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000284,PKM-010,2025-02-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000285,PKM-010,2025-03-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000286,PKM-010,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000287,PKM-010,2025-03-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000288,PKM-010,2025-03-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000289,PKM-010,2025-04-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000290,PKM-010,2025-05-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G07"", ""G15""]",keyword-baseline
+ANM-000291,PKM-010,2025-06-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03"", ""G07""]",keyword-baseline
+ANM-000292,PKM-010,2025-06-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000293,PKM-010,2025-06-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000294,PKM-010,2025-07-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000295,PKM-010,2025-07-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000296,PKM-010,2025-08-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000297,PKM-010,2025-09-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000298,PKM-010,2025-10-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000299,PKM-010,2025-11-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000300,PKM-010,2025-11-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000301,PKM-010,2025-11-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000302,PKM-010,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000303,PKM-010,2025-12-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000304,PKM-011,2025-01-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000305,PKM-011,2025-01-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G07"", ""G10""]",keyword-baseline
+ANM-000306,PKM-011,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000307,PKM-011,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000308,PKM-011,2025-04-01,"[{""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G09"", ""G15""]",keyword-baseline
+ANM-000309,PKM-011,2025-05-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000310,PKM-011,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000311,PKM-011,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000312,PKM-011,2025-06-01,"[{""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G09"", ""G14""]",keyword-baseline
+ANM-000313,PKM-011,2025-06-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000314,PKM-011,2025-06-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000315,PKM-011,2025-07-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000316,PKM-011,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03""]",keyword-baseline
+ANM-000317,PKM-011,2025-09-01,"[{""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G09"", ""G10""]",keyword-baseline
+ANM-000318,PKM-011,2025-09-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000319,PKM-011,2025-09-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000320,PKM-011,2025-10-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04"", ""G11""]",keyword-baseline
+ANM-000321,PKM-011,2025-10-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000322,PKM-011,2025-10-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000323,PKM-011,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000324,PKM-011,2025-11-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000325,PKM-011,2025-11-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G05""]",keyword-baseline
+ANM-000326,PKM-011,2025-11-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000327,PKM-012,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03""]",keyword-baseline
+ANM-000328,PKM-012,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000329,PKM-012,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000330,PKM-012,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000331,PKM-012,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000332,PKM-012,2025-03-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000333,PKM-012,2025-03-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000334,PKM-012,2025-03-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G08"", ""G13""]",keyword-baseline
+ANM-000335,PKM-012,2025-03-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000336,PKM-012,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000337,PKM-012,2025-05-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G04"", ""G13""]",keyword-baseline
+ANM-000338,PKM-012,2025-06-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000339,PKM-012,2025-06-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000340,PKM-012,2025-06-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000341,PKM-012,2025-06-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G12""]",keyword-baseline
+ANM-000342,PKM-012,2025-06-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000343,PKM-012,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000344,PKM-012,2025-07-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G08"", ""G11""]",keyword-baseline
+ANM-000345,PKM-012,2025-08-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000346,PKM-012,2025-08-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G14"", ""G15""]",keyword-baseline
+ANM-000347,PKM-012,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000348,PKM-012,2025-09-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G05""]",keyword-baseline
+ANM-000349,PKM-012,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G08"", ""G11""]",keyword-baseline
+ANM-000350,PKM-012,2025-09-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G10""]",keyword-baseline
+ANM-000351,PKM-012,2025-11-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000352,PKM-012,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000353,PKM-012,2025-12-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09""]",keyword-baseline
+ANM-000354,PKM-012,2025-12-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000355,PKM-013,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03"", ""G04"", ""G12""]",keyword-baseline
+ANM-000356,PKM-013,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000357,PKM-013,2025-01-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000358,PKM-013,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G04""]",keyword-baseline
+ANM-000359,PKM-013,2025-02-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000360,PKM-013,2025-02-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000361,PKM-013,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000362,PKM-013,2025-04-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000363,PKM-013,2025-04-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000364,PKM-013,2025-04-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000365,PKM-013,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000366,PKM-013,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000367,PKM-013,2025-05-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000368,PKM-013,2025-05-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000369,PKM-013,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000370,PKM-013,2025-08-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000371,PKM-013,2025-08-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000372,PKM-013,2025-09-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000373,PKM-013,2025-09-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06""]",keyword-baseline
+ANM-000374,PKM-013,2025-09-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000375,PKM-013,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000376,PKM-013,2025-10-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G04"", ""G05""]",keyword-baseline
+ANM-000377,PKM-013,2025-10-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000378,PKM-013,2025-10-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000379,PKM-013,2025-11-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09"", ""G10""]",keyword-baseline
+ANM-000380,PKM-013,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000381,PKM-013,2025-11-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000382,PKM-013,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000383,PKM-013,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000384,PKM-013,2025-11-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000385,PKM-013,2025-11-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000386,PKM-013,2025-11-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000387,PKM-013,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000388,PKM-013,2025-12-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G09"", ""G10""]",keyword-baseline
+ANM-000389,PKM-013,2025-12-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000390,PKM-013,2025-12-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000391,PKM-014,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000392,PKM-014,2025-01-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000393,PKM-014,2025-02-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09""]",keyword-baseline
+ANM-000394,PKM-014,2025-02-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000395,PKM-014,2025-02-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000396,PKM-014,2025-02-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000397,PKM-014,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06""]",keyword-baseline
+ANM-000398,PKM-014,2025-04-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000399,PKM-014,2025-04-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000400,PKM-014,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000401,PKM-014,2025-05-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000402,PKM-014,2025-06-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000403,PKM-014,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000404,PKM-014,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000405,PKM-014,2025-07-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000406,PKM-014,2025-07-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000407,PKM-014,2025-08-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000408,PKM-014,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000409,PKM-014,2025-09-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000410,PKM-014,2025-09-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000411,PKM-014,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G07""]",keyword-baseline
+ANM-000412,PKM-014,2025-11-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000413,PKM-014,2025-11-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G05""]",keyword-baseline
+ANM-000414,PKM-014,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000415,PKM-014,2025-11-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000416,PKM-014,2025-12-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000417,PKM-014,2025-12-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000418,PKM-015,2025-01-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000419,PKM-015,2025-02-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000420,PKM-015,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000421,PKM-015,2025-04-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000422,PKM-015,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000423,PKM-015,2025-04-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000424,PKM-015,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000425,PKM-015,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000426,PKM-015,2025-06-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03""]",keyword-baseline
+ANM-000427,PKM-015,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G06""]",keyword-baseline
+ANM-000428,PKM-015,2025-07-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000429,PKM-015,2025-07-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G10""]",keyword-baseline
+ANM-000430,PKM-015,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G14""]",keyword-baseline
+ANM-000431,PKM-015,2025-08-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000432,PKM-015,2025-08-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000433,PKM-015,2025-08-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000434,PKM-015,2025-09-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000435,PKM-015,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000436,PKM-015,2025-10-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03""]",keyword-baseline
+ANM-000437,PKM-015,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000438,PKM-015,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000439,PKM-016,2025-01-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G10"", ""G14""]",keyword-baseline
+ANM-000440,PKM-016,2025-01-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000441,PKM-016,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03"", ""G04""]",keyword-baseline
+ANM-000442,PKM-016,2025-02-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000443,PKM-016,2025-02-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000444,PKM-016,2025-03-01,[],0.0,True,"[""G01""]",keyword-baseline
+ANM-000445,PKM-016,2025-03-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000446,PKM-016,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000447,PKM-016,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000448,PKM-016,2025-03-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000449,PKM-016,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000450,PKM-016,2025-04-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000451,PKM-016,2025-04-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000452,PKM-016,2025-04-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G11"", ""G15""]",keyword-baseline
+ANM-000453,PKM-016,2025-05-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000454,PKM-016,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000455,PKM-016,2025-06-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000456,PKM-016,2025-06-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000457,PKM-016,2025-06-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000458,PKM-016,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000459,PKM-016,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000460,PKM-016,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000461,PKM-016,2025-07-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09""]",keyword-baseline
+ANM-000462,PKM-016,2025-07-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G11""]",keyword-baseline
+ANM-000463,PKM-016,2025-07-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000464,PKM-016,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11"", ""G12""]",keyword-baseline
+ANM-000465,PKM-016,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000466,PKM-016,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000467,PKM-016,2025-08-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G13"", ""G15""]",keyword-baseline
+ANM-000468,PKM-016,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000469,PKM-016,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000470,PKM-016,2025-10-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000471,PKM-016,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G04""]",keyword-baseline
+ANM-000472,PKM-016,2025-10-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000473,PKM-016,2025-10-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000474,PKM-016,2025-10-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000475,PKM-016,2025-10-01,"[{""symptom_id"": ""G12"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G12"", ""G13""]",keyword-baseline
+ANM-000476,PKM-016,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000477,PKM-016,2025-11-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000478,PKM-016,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000479,PKM-016,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000480,PKM-016,2025-11-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000481,PKM-016,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G14""]",keyword-baseline
+ANM-000482,PKM-016,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000483,PKM-016,2025-12-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G13""]",keyword-baseline
+ANM-000484,PKM-017,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000485,PKM-017,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000486,PKM-017,2025-01-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000487,PKM-017,2025-02-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000488,PKM-017,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000489,PKM-017,2025-02-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000490,PKM-017,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G13""]",keyword-baseline
+ANM-000491,PKM-017,2025-04-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000492,PKM-017,2025-04-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000493,PKM-017,2025-06-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000494,PKM-017,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000495,PKM-017,2025-08-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000496,PKM-017,2025-08-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000497,PKM-017,2025-08-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000498,PKM-017,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000499,PKM-017,2025-09-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000500,PKM-017,2025-09-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000501,PKM-017,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000502,PKM-017,2025-10-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000503,PKM-017,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04"", ""G12""]",keyword-baseline
+ANM-000504,PKM-017,2025-12-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000505,PKM-018,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000506,PKM-018,2025-01-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000507,PKM-018,2025-01-01,"[{""symptom_id"": ""G12"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G12"", ""G13""]",keyword-baseline
+ANM-000508,PKM-018,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04"", ""G08""]",keyword-baseline
+ANM-000509,PKM-018,2025-03-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000510,PKM-018,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G07""]",keyword-baseline
+ANM-000511,PKM-018,2025-03-01,[],0.0,True,"[""G01""]",keyword-baseline
+ANM-000512,PKM-018,2025-04-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03""]",keyword-baseline
+ANM-000513,PKM-018,2025-04-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000514,PKM-018,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G09""]",keyword-baseline
+ANM-000515,PKM-018,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G04""]",keyword-baseline
+ANM-000516,PKM-018,2025-06-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G14"", ""G15""]",keyword-baseline
+ANM-000517,PKM-018,2025-06-01,"[{""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G09"", ""G15""]",keyword-baseline
+ANM-000518,PKM-018,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000519,PKM-018,2025-07-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G07"", ""G09""]",keyword-baseline
+ANM-000520,PKM-018,2025-07-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000521,PKM-018,2025-07-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000522,PKM-018,2025-08-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000523,PKM-018,2025-08-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03""]",keyword-baseline
+ANM-000524,PKM-018,2025-08-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000525,PKM-018,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000526,PKM-018,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03"", ""G04""]",keyword-baseline
+ANM-000527,PKM-018,2025-12-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G10""]",keyword-baseline
+ANM-000528,PKM-019,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000529,PKM-019,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000530,PKM-019,2025-01-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000531,PKM-019,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G06""]",keyword-baseline
+ANM-000532,PKM-019,2025-02-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000533,PKM-019,2025-02-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G11""]",keyword-baseline
+ANM-000534,PKM-019,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000535,PKM-019,2025-02-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000536,PKM-019,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000537,PKM-019,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000538,PKM-019,2025-04-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000539,PKM-019,2025-05-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000540,PKM-019,2025-06-01,"[{""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G09""]",keyword-baseline
+ANM-000541,PKM-019,2025-07-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000542,PKM-019,2025-10-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000543,PKM-019,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000544,PKM-019,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000545,PKM-019,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000546,PKM-019,2025-12-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000547,PKM-019,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000548,PKM-019,2025-12-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000549,PKM-019,2025-12-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000550,PKM-020,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G03""]",keyword-baseline
+ANM-000551,PKM-020,2025-02-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000552,PKM-020,2025-04-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000553,PKM-020,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000554,PKM-020,2025-11-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000555,PKM-020,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000556,PKM-020,2025-11-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000557,PKM-020,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000558,PKM-021,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000559,PKM-021,2025-01-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000560,PKM-021,2025-02-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000561,PKM-021,2025-03-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000562,PKM-021,2025-03-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000563,PKM-021,2025-03-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000564,PKM-021,2025-03-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000565,PKM-021,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09"", ""G10"", ""G15""]",keyword-baseline
+ANM-000566,PKM-021,2025-05-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000567,PKM-021,2025-05-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000568,PKM-021,2025-07-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G07"", ""G11""]",keyword-baseline
+ANM-000569,PKM-021,2025-07-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000570,PKM-021,2025-07-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000571,PKM-021,2025-07-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000572,PKM-021,2025-08-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000573,PKM-021,2025-09-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000574,PKM-021,2025-10-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000575,PKM-021,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000576,PKM-021,2025-12-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G09""]",keyword-baseline
+ANM-000577,PKM-022,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000578,PKM-022,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000579,PKM-022,2025-01-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000580,PKM-022,2025-01-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000581,PKM-022,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000582,PKM-022,2025-02-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000583,PKM-022,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G04""]",keyword-baseline
+ANM-000584,PKM-022,2025-03-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000585,PKM-022,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000586,PKM-022,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000587,PKM-022,2025-04-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G15""]",keyword-baseline
+ANM-000588,PKM-022,2025-05-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000589,PKM-022,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000590,PKM-022,2025-05-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000591,PKM-022,2025-06-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000592,PKM-022,2025-06-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000593,PKM-022,2025-06-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000594,PKM-022,2025-06-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000595,PKM-022,2025-07-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000596,PKM-022,2025-07-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G14""]",keyword-baseline
+ANM-000597,PKM-022,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000598,PKM-022,2025-08-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000599,PKM-022,2025-09-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09"", ""G15""]",keyword-baseline
+ANM-000600,PKM-022,2025-10-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000601,PKM-022,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03""]",keyword-baseline
+ANM-000602,PKM-022,2025-11-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09"", ""G10""]",keyword-baseline
+ANM-000603,PKM-022,2025-11-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000604,PKM-022,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000605,PKM-022,2025-12-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000606,PKM-023,2025-01-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000607,PKM-023,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000608,PKM-023,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000609,PKM-023,2025-02-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G08"", ""G15""]",keyword-baseline
+ANM-000610,PKM-023,2025-03-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000611,PKM-023,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000612,PKM-023,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000613,PKM-023,2025-03-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G11"", ""G15""]",keyword-baseline
+ANM-000614,PKM-023,2025-04-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000615,PKM-023,2025-05-01,[],0.0,True,"[""G01""]",keyword-baseline
+ANM-000616,PKM-023,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000617,PKM-023,2025-05-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G07"", ""G11""]",keyword-baseline
+ANM-000618,PKM-023,2025-05-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000619,PKM-023,2025-06-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000620,PKM-023,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000621,PKM-023,2025-08-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000622,PKM-023,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G15""]",keyword-baseline
+ANM-000623,PKM-023,2025-10-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000624,PKM-023,2025-11-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000625,PKM-023,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000626,PKM-023,2025-12-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000627,PKM-023,2025-12-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G07""]",keyword-baseline
+ANM-000628,PKM-023,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000629,PKM-023,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03""]",keyword-baseline
+ANM-000630,PKM-023,2025-12-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000631,PKM-024,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000632,PKM-024,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000633,PKM-024,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G06""]",keyword-baseline
+ANM-000634,PKM-024,2025-01-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09"", ""G10""]",keyword-baseline
+ANM-000635,PKM-024,2025-01-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000636,PKM-024,2025-02-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000637,PKM-024,2025-02-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000638,PKM-024,2025-02-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000639,PKM-024,2025-02-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000640,PKM-024,2025-03-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000641,PKM-024,2025-04-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000642,PKM-024,2025-05-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09""]",keyword-baseline
+ANM-000643,PKM-024,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000644,PKM-024,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G11""]",keyword-baseline
+ANM-000645,PKM-024,2025-06-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000646,PKM-024,2025-06-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03""]",keyword-baseline
+ANM-000647,PKM-024,2025-06-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000648,PKM-024,2025-07-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000649,PKM-024,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000650,PKM-024,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000651,PKM-024,2025-08-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G06""]",keyword-baseline
+ANM-000652,PKM-024,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000653,PKM-024,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000654,PKM-025,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000655,PKM-025,2025-01-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000656,PKM-025,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000657,PKM-025,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000658,PKM-025,2025-04-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}]",0.9,False,"[""G06""]",keyword-baseline
+ANM-000659,PKM-025,2025-04-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G07"", ""G12""]",keyword-baseline
+ANM-000660,PKM-025,2025-04-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000661,PKM-025,2025-05-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G15""]",keyword-baseline
+ANM-000662,PKM-025,2025-05-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000663,PKM-025,2025-05-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G13""]",keyword-baseline
+ANM-000664,PKM-025,2025-06-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000665,PKM-025,2025-06-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G07"", ""G14""]",keyword-baseline
+ANM-000666,PKM-025,2025-06-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000667,PKM-025,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000668,PKM-025,2025-07-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000669,PKM-025,2025-08-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline
+ANM-000670,PKM-025,2025-08-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000671,PKM-025,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000672,PKM-025,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000673,PKM-025,2025-10-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000674,PKM-025,2025-11-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03"", ""G04""]",keyword-baseline
+ANM-000675,PKM-025,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000676,PKM-025,2025-11-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000677,PKM-026,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000678,PKM-026,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000679,PKM-026,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000680,PKM-026,2025-02-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G15""]",keyword-baseline
+ANM-000681,PKM-026,2025-02-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000682,PKM-026,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000683,PKM-026,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000684,PKM-026,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000685,PKM-026,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G15""]",keyword-baseline
+ANM-000686,PKM-026,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G09""]",keyword-baseline
+ANM-000687,PKM-026,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G15""]",keyword-baseline
+ANM-000688,PKM-026,2025-05-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000689,PKM-026,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000690,PKM-026,2025-06-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000691,PKM-026,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000692,PKM-026,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000693,PKM-026,2025-07-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G11""]",keyword-baseline
+ANM-000694,PKM-026,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000695,PKM-026,2025-09-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09"", ""G10"", ""G12""]",keyword-baseline
+ANM-000696,PKM-026,2025-09-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G14""]",keyword-baseline
+ANM-000697,PKM-026,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000698,PKM-026,2025-10-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000699,PKM-026,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000700,PKM-026,2025-11-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G07"", ""G08""]",keyword-baseline
+ANM-000701,PKM-026,2025-11-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000702,PKM-026,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000703,PKM-026,2025-12-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000704,PKM-027,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G04""]",keyword-baseline
+ANM-000705,PKM-027,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G11""]",keyword-baseline
+ANM-000706,PKM-027,2025-02-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000707,PKM-027,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G12""]",keyword-baseline
+ANM-000708,PKM-027,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000709,PKM-027,2025-03-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000710,PKM-027,2025-04-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000711,PKM-027,2025-04-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G13""]",keyword-baseline
+ANM-000712,PKM-027,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G14""]",keyword-baseline
+ANM-000713,PKM-027,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G05""]",keyword-baseline
+ANM-000714,PKM-027,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11"", ""G14""]",keyword-baseline
+ANM-000715,PKM-027,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000716,PKM-027,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G09""]",keyword-baseline
+ANM-000717,PKM-027,2025-08-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000718,PKM-027,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000719,PKM-027,2025-09-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G12""]",keyword-baseline
+ANM-000720,PKM-027,2025-12-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000721,PKM-028,2025-01-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11""]",keyword-baseline
+ANM-000722,PKM-028,2025-01-01,"[{""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G12""]",keyword-baseline
+ANM-000723,PKM-028,2025-01-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000724,PKM-028,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G07"", ""G11""]",keyword-baseline
+ANM-000725,PKM-028,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000726,PKM-028,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000727,PKM-028,2025-04-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000728,PKM-028,2025-04-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G10""]",keyword-baseline
+ANM-000729,PKM-028,2025-05-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000730,PKM-028,2025-07-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000731,PKM-028,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000732,PKM-028,2025-08-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G09"", ""G10""]",keyword-baseline
+ANM-000733,PKM-028,2025-09-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G02""]",keyword-baseline
+ANM-000734,PKM-028,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000735,PKM-028,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11""]",keyword-baseline
+ANM-000736,PKM-028,2025-11-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000737,PKM-028,2025-11-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G10""]",keyword-baseline
+ANM-000738,PKM-028,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02"", ""G15""]",keyword-baseline
+ANM-000739,PKM-028,2025-12-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000740,PKM-029,2025-01-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000741,PKM-029,2025-01-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G14""]",keyword-baseline
+ANM-000742,PKM-029,2025-01-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000743,PKM-029,2025-01-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000744,PKM-029,2025-01-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000745,PKM-029,2025-02-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04"", ""G15""]",keyword-baseline
+ANM-000746,PKM-029,2025-02-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000747,PKM-029,2025-02-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000748,PKM-029,2025-02-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G11"", ""G12""]",keyword-baseline
+ANM-000749,PKM-029,2025-02-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000750,PKM-029,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000751,PKM-029,2025-03-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G11"", ""G13""]",keyword-baseline
+ANM-000752,PKM-029,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000753,PKM-029,2025-03-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G08"", ""G10""]",keyword-baseline
+ANM-000754,PKM-029,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G05""]",keyword-baseline
+ANM-000755,PKM-029,2025-04-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000756,PKM-029,2025-05-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}]",0.9,False,"[""G01""]",keyword-baseline
+ANM-000757,PKM-029,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000758,PKM-029,2025-05-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000759,PKM-029,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G10"", ""G12""]",keyword-baseline
+ANM-000760,PKM-029,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000761,PKM-029,2025-06-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G11"", ""G15""]",keyword-baseline
+ANM-000762,PKM-029,2025-06-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000763,PKM-029,2025-07-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000764,PKM-029,2025-07-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000765,PKM-029,2025-07-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000766,PKM-029,2025-08-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11"", ""G15""]",keyword-baseline
+ANM-000767,PKM-029,2025-08-01,"[{""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G06"", ""G09""]",keyword-baseline
+ANM-000768,PKM-029,2025-08-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000769,PKM-029,2025-08-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000770,PKM-029,2025-10-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G02"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G02""]",keyword-baseline
+ANM-000771,PKM-029,2025-10-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G11""]",keyword-baseline
+ANM-000772,PKM-029,2025-10-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000773,PKM-029,2025-10-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000774,PKM-029,2025-11-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G03""]",keyword-baseline
+ANM-000775,PKM-029,2025-11-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05""]",keyword-baseline
+ANM-000776,PKM-029,2025-11-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000777,PKM-029,2025-11-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G07""]",keyword-baseline
+ANM-000778,PKM-029,2025-12-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000779,PKM-029,2025-12-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G04""]",keyword-baseline
+ANM-000780,PKM-030,2025-01-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000781,PKM-030,2025-01-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G13"", ""confidence"": 0.9}]",0.9,False,"[""G11"", ""G13""]",keyword-baseline
+ANM-000782,PKM-030,2025-02-01,"[{""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G14""]",keyword-baseline
+ANM-000783,PKM-030,2025-02-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000784,PKM-030,2025-02-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000785,PKM-030,2025-03-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04"", ""G14""]",keyword-baseline
+ANM-000786,PKM-030,2025-03-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000787,PKM-030,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000788,PKM-030,2025-03-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000789,PKM-030,2025-03-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G05""]",keyword-baseline
+ANM-000790,PKM-030,2025-04-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09""]",keyword-baseline
+ANM-000791,PKM-030,2025-04-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000792,PKM-030,2025-05-01,"[{""symptom_id"": ""G08"", ""confidence"": 0.9}]",0.9,False,"[""G08""]",keyword-baseline
+ANM-000793,PKM-030,2025-05-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}, {""symptom_id"": ""G12"", ""confidence"": 0.9}]",0.9,False,"[""G11"", ""G12""]",keyword-baseline
+ANM-000794,PKM-030,2025-05-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000795,PKM-030,2025-05-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}]",0.9,False,"[""G03""]",keyword-baseline
+ANM-000796,PKM-030,2025-06-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G04""]",keyword-baseline
+ANM-000797,PKM-030,2025-06-01,"[{""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G07""]",keyword-baseline
+ANM-000798,PKM-030,2025-07-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04"", ""G05""]",keyword-baseline
+ANM-000799,PKM-030,2025-07-01,"[{""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G09"", ""G10""]",keyword-baseline
+ANM-000800,PKM-030,2025-08-01,"[{""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G11""]",keyword-baseline
+ANM-000801,PKM-030,2025-08-01,"[{""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G05"", ""G06"", ""G09"", ""G10""]",keyword-baseline
+ANM-000802,PKM-030,2025-08-01,"[{""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G15""]",keyword-baseline
+ANM-000803,PKM-030,2025-08-01,"[{""symptom_id"": ""G03"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G03"", ""G15""]",keyword-baseline
+ANM-000804,PKM-030,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G05"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G05"", ""G14""]",keyword-baseline
+ANM-000805,PKM-030,2025-09-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G07"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G07""]",keyword-baseline
+ANM-000806,PKM-030,2025-09-01,"[{""symptom_id"": ""G04"", ""confidence"": 0.9}, {""symptom_id"": ""G06"", ""confidence"": 0.9}, {""symptom_id"": ""G15"", ""confidence"": 0.9}]",0.9,False,"[""G04"", ""G06"", ""G15""]",keyword-baseline
+ANM-000807,PKM-030,2025-10-01,"[{""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G09"", ""G14""]",keyword-baseline
+ANM-000808,PKM-030,2025-10-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000809,PKM-030,2025-10-01,"[{""symptom_id"": ""G13"", ""confidence"": 0.9}, {""symptom_id"": ""G14"", ""confidence"": 0.9}]",0.9,False,"[""G13"", ""G14""]",keyword-baseline
+ANM-000810,PKM-030,2025-11-01,"[{""symptom_id"": ""G01"", ""confidence"": 0.9}, {""symptom_id"": ""G11"", ""confidence"": 0.9}]",0.9,False,"[""G01"", ""G11""]",keyword-baseline
+ANM-000811,PKM-030,2025-11-01,"[{""symptom_id"": ""G09"", ""confidence"": 0.9}, {""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G09"", ""G10""]",keyword-baseline
+ANM-000812,PKM-030,2025-11-01,"[{""symptom_id"": ""G10"", ""confidence"": 0.9}]",0.9,False,"[""G10""]",keyword-baseline
+ANM-000813,PKM-030,2025-12-01,"[{""symptom_id"": ""G02"", ""confidence"": 0.9}, {""symptom_id"": ""G04"", ""confidence"": 0.9}]",0.9,False,"[""G02"", ""G04""]",keyword-baseline

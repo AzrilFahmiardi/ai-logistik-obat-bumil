@@ -1,0 +1,26 @@
+sc_id,symptom_id,symptom_name,condition_id,likelihood,no_lab_weight
+1,G01,High fever,K01,0.85,1.3
+2,G01,High fever,K11,0.65,1.0
+3,G01,High fever,K05,0.35,1.0
+4,G02,Chills,K01,0.75,1.3
+5,G03,Excessive nausea and vomiting,K15,0.9,1.0
+6,G03,Excessive nausea and vomiting,K01,0.3,1.3
+7,G03,Excessive nausea and vomiting,K09,0.35,1.3
+8,G04,Extreme fatigue,K02,0.8,1.3
+9,G04,Extreme fatigue,K07,0.6,1.0
+10,G04,Extreme fatigue,K01,0.4,1.3
+11,G05,Severe headache or dizziness,K03,0.7,1.0
+12,G05,Severe headache or dizziness,K02,0.55,1.3
+13,G06,Facial or leg swelling,K03,0.75,1.0
+14,G07,Painful urination,K05,0.9,1.0
+15,G08,Abnormal vaginal discharge,K06,0.9,1.0
+16,G09,Blurred vision,K03,0.6,1.0
+17,G10,Epigastric pain,K13,0.7,1.0
+18,G10,Epigastric pain,K03,0.35,1.0
+19,G11,Shortness of breath,K11,0.6,1.0
+20,G11,Shortness of breath,K02,0.4,1.3
+21,G12,Jaundice,K09,0.7,1.3
+22,G13,Leg cramps or bone pain,K16,0.8,1.0
+23,G14,Prolonged sadness or anxiety,K12,0.85,1.0
+24,G15,Constipation or bloating,K14,0.8,1.0
+25,G15,Constipation or bloating,K07,0.3,1.0
