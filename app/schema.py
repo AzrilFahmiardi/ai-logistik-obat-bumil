@@ -11,13 +11,13 @@ class ForecastRequest(BaseModel):
     facility_id: str = Field(..., example="PKM-001")
     drug_id: str = Field(..., example="OBT-001")
     period: str = Field(..., example="2025-03-01", description="ISO date YYYY-MM-DD")
-    closing_stock: float = Field(..., ge=0)
-    estimated_total_cases: float = Field(..., ge=0)
-    lead_time_days: float = Field(..., ge=0)
+    closing_stock: float = Field(..., ge=0, example=120)
+    estimated_total_cases: float = Field(..., ge=0, example=15)
+    lead_time_days: float = Field(..., ge=0, example=14)
     rainy_season_access: str = Field(..., example="cut_off")
-    accessibility_score: float = Field(..., ge=0, le=1)
-    standard_daily_dose: float = Field(..., gt=0)
-    treatment_duration_days: float = Field(..., gt=0)
+    accessibility_score: float = Field(..., ge=0, le=1, example=0.3)
+    standard_daily_dose: float = Field(..., gt=0, example=6)
+    treatment_duration_days: float = Field(..., gt=0, example=7)
 
 
 class ForecastResponse(BaseModel):
@@ -45,7 +45,15 @@ class BatchForecastItem(BaseModel):
 class ExtractRecord(BaseModel):
     record_id: str = Field(..., example="ANM-000001")
     facility_id: str = Field(..., example="PKM-001")
-    transcript: str = Field(..., description="Free-text patient anamnesis transcript in English")
+    transcript: str = Field(
+        ...,
+        description="Free-text patient anamnesis transcript in English",
+        example=(
+            "Patient presents with severe nausea and vomiting for 3 days, "
+            "unable to keep food down, dizziness, and upper abdominal pain. "
+            "Pregnancy at 10 weeks."
+        ),
+    )
     has_lab: Optional[bool] = Field(
         None,
         description="Whether the facility has a laboratory. Defaults to facility master data.",
@@ -59,6 +67,27 @@ class ManualDiagnosis(BaseModel):
 
 
 class ExtractRequest(BaseModel):
+    model_config = {
+        "json_schema_extra": {
+            "example": {
+                "period": "2025-03-01",
+                "records": [
+                    {
+                        "record_id": "ANM-000001",
+                        "facility_id": "PKM-001",
+                        "transcript": (
+                            "Patient presents with severe nausea and vomiting for 3 days, "
+                            "unable to keep food down, dizziness, and upper abdominal pain. "
+                            "Pregnancy at 10 weeks."
+                        ),
+                        "has_lab": False,
+                    }
+                ],
+                "manual_diagnoses": None,
+            }
+        }
+    }
+
     period: str = Field(..., example="2025-01-01", description="ISO date YYYY-MM-DD")
     records: List[ExtractRecord]
     manual_diagnoses: Optional[List[ManualDiagnosis]] = Field(
@@ -99,7 +128,7 @@ class ExtractResponse(BaseModel):
 
 class IFKStockItem(BaseModel):
     drug_id: str = Field(..., example="OBT-001")
-    available_units: int = Field(..., ge=0)
+    available_units: int = Field(..., ge=0, example=500)
 
 
 class StockoutHistoryItem(BaseModel):
@@ -109,15 +138,33 @@ class StockoutHistoryItem(BaseModel):
 
 
 class L1ForecastItem(BaseModel):
-    facility_id: str
-    drug_id: str
-    forecast_demand: int = Field(..., ge=0)
-    current_stock: int = Field(..., ge=0)
-    total_requirement: int = Field(..., ge=0)
-    forecast_period: str = Field(..., description="ISO date YYYY-MM-DD")
+    facility_id: str = Field(..., example="PKM-001")
+    drug_id: str = Field(..., example="OBT-001")
+    forecast_demand: int = Field(..., ge=0, example=42)
+    current_stock: int = Field(..., ge=0, example=15)
+    total_requirement: int = Field(..., ge=0, example=53)
+    forecast_period: str = Field(..., description="ISO date YYYY-MM-DD", example="2025-03-01")
 
 
 class AllocateRequest(BaseModel):
+    model_config = {
+        "json_schema_extra": {
+            "example": {
+                "run_id": "march-2025",
+                "l1_forecasts": [
+                    {"facility_id": "PKM-001", "drug_id": "OBT-001", "forecast_demand": 42, "current_stock": 15, "total_requirement": 53, "forecast_period": "2025-03-01"},
+                    {"facility_id": "PKM-001", "drug_id": "OBT-002", "forecast_demand": 30, "current_stock": 10, "total_requirement": 38, "forecast_period": "2025-03-01"},
+                    {"facility_id": "PKM-002", "drug_id": "OBT-001", "forecast_demand": 55, "current_stock": 20, "total_requirement": 69, "forecast_period": "2025-03-01"},
+                ],
+                "ifk_stock": [
+                    {"drug_id": "OBT-001", "available_units": 80},
+                    {"drug_id": "OBT-002", "available_units": 30},
+                ],
+                "stockout_history": None,
+            }
+        }
+    }
+
     l1_forecasts: List[L1ForecastItem]
     ifk_stock: List[IFKStockItem]
     run_id: Optional[str] = Field(None, description="Optional run identifier. Auto-generated if omitted.")
