@@ -1,0 +1,31 @@
+drug_id,drug_name,category,unit,requires_cold_chain,standard_daily_dose,treatment_duration_days
+OBT-001,Quinine,essential,tablet,False,6,7
+OBT-002,Clindamycin,essential,capsule,False,3,7
+OBT-003,Artemisinin Combination Therapy,essential,tablet,False,4,3
+OBT-004,High Dose Iron,essential,tablet,False,2,30
+OBT-005,Vitamin B12,routine,tablet,False,1,30
+OBT-006,Folic Acid Supplement,routine,tablet,False,1,30
+OBT-007,Glucose Oral IV,emergency,vial,True,2,2
+OBT-008,Nifedipine,essential,tablet,False,3,14
+OBT-009,Methyldopa,essential,tablet,False,3,14
+OBT-010,Magnesium Sulfate,emergency,vial,True,4,2
+OBT-011,Insulin,emergency,vial,True,1,30
+OBT-012,Metformin,essential,tablet,False,2,30
+OBT-013,Amoxicillin,essential,capsule,False,3,7
+OBT-014,Cephalexin,essential,capsule,False,4,7
+OBT-015,Ondansetron,essential,tablet,False,3,5
+OBT-016,Pyridoxine Vitamin B6,routine,tablet,False,3,14
+OBT-017,Antacid,routine,tablet,False,3,14
+OBT-018,Levothyroxine,essential,tablet,False,1,30
+OBT-019,Antiretroviral,emergency,tablet,True,1,30
+OBT-020,Cotrimoxazole,essential,tablet,False,1,30
+OBT-021,Tenofovir,essential,tablet,False,1,30
+OBT-022,Metronidazole,essential,tablet,False,2,7
+OBT-023,Clotrimazole Topical,routine,tube,False,1,7
+OBT-024,Paracetamol,routine,tablet,False,3,5
+OBT-025,Sertraline,essential,tablet,False,1,30
+OBT-026,Ranitidine,routine,tablet,False,2,14
+OBT-027,Omeprazole,routine,capsule,False,1,14
+OBT-028,Lactulose,routine,bottle,False,1,1
+OBT-029,Spiramycin,essential,tablet,False,3,21
+OBT-030,Pyrimethamine,essential,tablet,False,1,21

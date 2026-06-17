@@ -1,0 +1,17 @@
+condition_id,condition_name,category,typical_diagnosis_source,prior_prevalence
+K01,Malaria,Parasitic Infection,rdt,0.1
+K02,Anemia,Hematology,lab,0.18
+K03,Hypertension Preeclampsia,Cardiovascular,clinical,0.1
+K04,Gestational Diabetes,Metabolic,lab,0.05
+K05,Urinary Tract Infection,Bacterial Infection,clinical,0.1
+K06,Vaginal Infection,Infection,clinical,0.08
+K07,Hypothyroidism,Endocrine,clinical,0.03
+K08,HIV,Viral Infection,rdt,0.01
+K09,Hepatitis B,Viral Infection,rdt,0.02
+K10,Toxoplasmosis,Parasitic Infection,lab,0.01
+K11,Respiratory Infection Pneumonia,Respiratory,clinical,0.1
+K12,Antenatal Depression Anxiety,Mental Health,clinical,0.06
+K13,Heartburn GERD,Gastrointestinal,clinical,0.08
+K14,Constipation Hemorrhoids,Gastrointestinal,clinical,0.06
+K15,Hyperemesis Gravidarum,Gastrointestinal,clinical,0.05
+K16,Calcium Deficiency,Nutritional,clinical,0.04

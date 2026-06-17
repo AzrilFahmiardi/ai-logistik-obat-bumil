@@ -1,0 +1,34 @@
+kb_id,condition_id,drug_id,trimester_applicable,priority,notes
+1,K01,OBT-001,T1,1,Quinine for first trimester malaria
+2,K01,OBT-002,T1,2,Combined with quinine in first trimester
+3,K01,OBT-003,"T2,T3",1,ACT for second and third trimester malaria
+4,K01,OBT-004,"T1,T2,T3",2,Iron support for malaria related anemia
+5,K01,OBT-007,"T1,T2,T3",2,Glucose for severe malaria hypoglycemia
+6,K02,OBT-004,"T1,T2,T3",1,High dose iron for severe anemia
+7,K02,OBT-005,"T1,T2,T3",2,Adjunct for severe anemia
+8,K02,OBT-006,"T1,T2,T3",2,Adjunct for severe anemia
+9,K03,OBT-008,"T2,T3",1,First line oral antihypertensive
+10,K03,OBT-009,"T1,T2,T3",2,Alternative antihypertensive
+11,K03,OBT-010,"T2,T3",1,Seizure prophylaxis in severe preeclampsia
+12,K04,OBT-012,"T2,T3",1,First line for gestational diabetes
+13,K04,OBT-011,"T2,T3",1,Insulin for uncontrolled cases
+14,K05,OBT-013,"T1,T2,T3",1,First line for urinary tract infection
+15,K05,OBT-014,"T1,T2,T3",2,Alternative for urinary tract infection
+16,K06,OBT-022,"T2,T3",1,For bacterial vaginosis
+17,K06,OBT-023,"T1,T2,T3",2,For candidiasis
+18,K07,OBT-018,"T1,T2,T3",1,Thyroid hormone replacement
+19,K08,OBT-019,"T1,T2,T3",1,Antiretroviral therapy
+20,K08,OBT-020,"T2,T3",2,Opportunistic infection prophylaxis
+21,K09,OBT-021,"T1,T2,T3",1,Antiviral for hepatitis B
+22,K10,OBT-029,T1,1,Spiramycin in first trimester
+23,K10,OBT-030,"T2,T3",1,Pyrimethamine after first trimester
+24,K11,OBT-024,"T1,T2,T3",1,Symptomatic fever treatment
+25,K11,OBT-013,"T1,T2,T3",2,Antibiotic for suspected pneumonia
+26,K12,OBT-025,"T1,T2,T3",1,For moderate to severe antenatal depression
+27,K13,OBT-027,"T1,T2,T3",1,First line acid suppression
+28,K13,OBT-026,"T1,T2,T3",2,Alternative acid suppression
+29,K13,OBT-017,"T1,T2,T3",2,Symptomatic relief
+30,K14,OBT-028,"T1,T2,T3",1,Laxative for constipation
+31,K15,OBT-015,T1,1,Antiemetic for hyperemesis
+32,K15,OBT-016,T1,2,First line adjunct antiemetic
+33,K15,OBT-017,T1,2,Symptomatic relief

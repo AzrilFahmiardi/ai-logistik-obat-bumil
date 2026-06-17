@@ -1,0 +1,31 @@
+facility_id,name,district,province,remoteness,is_malaria_endemic,has_lab,has_cold_chain,storage_capacity_total,cold_chain_capacity,distance_to_ifk_km,lead_time_days,accessibility_score,rainy_season_access,regional_mmr,baseline_pregnancy_count
+PKM-001,Puskesmas Ruteng,Kecamatan Wae Rii,Nusa Tenggara Timur,very_remote,True,False,True,1246,146,142.5,14.0,1,cut_off,464.8,42
+PKM-002,Puskesmas Reok,Kecamatan Cibal,Nusa Tenggara Timur,remote,True,False,True,2083,146,56.3,5.9,2,normal,317.9,58
+PKM-003,Puskesmas Wae Nakeng,Kecamatan Satar Mese,Nusa Tenggara Timur,ordinary,True,True,True,2727,131,29.5,2.6,3,normal,296.5,88
+PKM-004,Puskesmas Cancar,Kecamatan Satar Mese,Nusa Tenggara Timur,very_remote,True,False,False,970,0,94.0,7.1,1,cut_off,572.9,37
+PKM-005,Puskesmas Iteng,Kecamatan Lembor,Nusa Tenggara Timur,very_remote,True,False,False,1338,0,88.0,13.0,1,cut_off,528.4,51
+PKM-006,Puskesmas Narang,Kecamatan Reok,Nusa Tenggara Timur,very_remote,True,False,False,1779,0,101.3,7.3,1,cut_off,469.4,54
+PKM-007,Puskesmas Wangko,Kecamatan Wae Rii,Nusa Tenggara Timur,ordinary,True,True,True,2451,72,28.2,3.1,3,disrupted,289.7,86
+PKM-008,Puskesmas Dintor,Kecamatan Reok,Nusa Tenggara Timur,remote,False,True,True,2168,49,76.1,6.3,2,disrupted,380.2,89
+PKM-009,Puskesmas Lembor,Kecamatan Cibal,Nusa Tenggara Timur,very_remote,True,False,True,749,109,105.3,7.8,1,cut_off,447.1,26
+PKM-010,Puskesmas Werang,Kecamatan Wae Rii,Nusa Tenggara Timur,ordinary,False,True,True,3160,125,30.1,2.9,3,disrupted,193.5,80
+PKM-011,Puskesmas Terang,Kecamatan Ruteng,Nusa Tenggara Timur,remote,True,True,False,1763,0,48.8,8.3,2,disrupted,431.7,53
+PKM-012,Puskesmas Orong,Kecamatan Satar Mese,Nusa Tenggara Timur,remote,False,False,True,2201,49,60.8,4.2,2,normal,346.0,64
+PKM-013,Puskesmas Ketang,Kecamatan Satar Mese,Nusa Tenggara Timur,ordinary,False,True,True,3453,103,17.1,3.2,3,normal,183.2,89
+PKM-014,Puskesmas Pagal,Kecamatan Wae Rii,Nusa Tenggara Timur,ordinary,False,True,True,2193,93,37.8,3.1,3,normal,217.4,69
+PKM-015,Puskesmas Cibal,Kecamatan Reok,Nusa Tenggara Timur,remote,True,True,True,2344,138,47.0,6.8,2,disrupted,301.7,63
+PKM-016,Puskesmas Bea Mese,Kecamatan Satar Mese,Nusa Tenggara Timur,ordinary,False,True,True,3593,51,37.1,2.5,3,normal,257.7,99
+PKM-017,Puskesmas Rahong,Kecamatan Lembor,Nusa Tenggara Timur,ordinary,False,True,True,2433,72,23.0,2.5,3,disrupted,311.0,62
+PKM-018,Puskesmas Wae Codi,Kecamatan Ruteng,Nusa Tenggara Timur,remote,True,False,True,1875,122,84.5,8.5,2,normal,343.2,49
+PKM-019,Puskesmas Lawir,Kecamatan Cibal,Nusa Tenggara Timur,remote,True,True,False,2336,0,53.1,8.7,2,disrupted,328.2,65
+PKM-020,Puskesmas Timung,Kecamatan Ruteng,Nusa Tenggara Timur,very_remote,True,True,False,705,0,141.2,8.8,1,disrupted,598.8,21
+PKM-021,Puskesmas Benteng,Kecamatan Cibal,Nusa Tenggara Timur,remote,True,True,False,1522,0,46.6,7.4,2,disrupted,304.4,55
+PKM-022,Puskesmas Langke,Kecamatan Reok,Nusa Tenggara Timur,ordinary,False,True,True,2838,118,30.9,2.3,3,normal,309.9,77
+PKM-023,Puskesmas Satar Mese,Kecamatan Wae Rii,Nusa Tenggara Timur,remote,True,False,True,1807,71,86.2,4.1,2,normal,391.0,46
+PKM-024,Puskesmas Ponggeok,Kecamatan Reok,Nusa Tenggara Timur,very_remote,True,False,True,986,105,145.3,14.2,1,cut_off,600.5,25
+PKM-025,Puskesmas Todo,Kecamatan Reok,Nusa Tenggara Timur,ordinary,False,True,True,2439,98,26.2,3.7,3,normal,264.4,88
+PKM-026,Puskesmas Popo,Kecamatan Cibal,Nusa Tenggara Timur,ordinary,False,True,True,2916,89,13.7,2.5,3,disrupted,294.3,77
+PKM-027,Puskesmas Lelak,Kecamatan Wae Rii,Nusa Tenggara Timur,very_remote,True,True,True,1822,74,90.1,15.3,1,disrupted,458.1,49
+PKM-028,Puskesmas Bangka Kenda,Kecamatan Lembor,Nusa Tenggara Timur,ordinary,True,True,True,1717,59,6.9,3.2,3,normal,235.1,69
+PKM-029,Puskesmas Wae Belang,Kecamatan Wae Rii,Nusa Tenggara Timur,remote,False,False,True,1827,59,51.8,5.2,2,disrupted,394.2,74
+PKM-030,Puskesmas Golo Welu,Kecamatan Cibal,Nusa Tenggara Timur,ordinary,False,True,True,2972,131,6.8,3.8,3,disrupted,298.1,116

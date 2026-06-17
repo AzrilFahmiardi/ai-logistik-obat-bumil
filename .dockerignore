@@ -1,0 +1,15 @@
+notebooks/
+demo/
+drive_local/
+dataset/
+reference/
+scripts/
+.git/
+.github/
+.claude/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.envrc
+*.ipynb_checkpoints/
