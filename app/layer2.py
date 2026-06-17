@@ -2,6 +2,7 @@ import json
 import math
 import os
 import re
+import time
 import uuid
 
 import numpy as np
@@ -278,7 +279,7 @@ def _generate_llm_text(payload: dict) -> str:
         {"role": "system", "content": EXPLAINER_SYSTEM_PROMPT},
         {"role": "user", "content": json.dumps(payload)},
     ]
-    return _llm.generate_reply(messages, max_new_tokens=180).strip()
+    return _llm.generate_reply(messages, max_new_tokens=500).strip()
 
 
 def _faithful_explanation(payload: dict, template_fn) -> tuple[str, str]:
@@ -443,6 +444,7 @@ def run_allocation(
         payload = _build_allocation_payload(row, supply, district_requirement)
         text, _ = _faithful_explanation(payload, _template_allocation_text)
         justification_lookup[("allocation", row.facility_id, row.drug_id)] = text
+        time.sleep(2)
 
     for row in redistribution.itertuples():
         payload = {
@@ -454,6 +456,7 @@ def run_allocation(
         }
         text, _ = _faithful_explanation(payload, _template_transfer_text)
         justification_lookup[("redistribution", row.to_facility_id, row.drug_id)] = text
+        time.sleep(2)
 
     total_alloc = int(allocation_result["allocated"].sum())
     total_req = int(allocation_result["requirement"].sum())
@@ -461,6 +464,7 @@ def run_allocation(
     facilities_served = int((allocation_result.groupby("facility_id")["allocated"].sum() > 0).sum())
     unmet = int(allocation_result["unmet_demand"].sum())
 
+    time.sleep(2)
     summary_payload = {
         "forecast_period": str(forecast_period),
         "total_requirement_units": total_req,

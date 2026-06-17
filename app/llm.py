@@ -1,59 +1,60 @@
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+import os
+import re
+import time
 
-LLM_MODEL_ID = "Qwen/Qwen3-4B-Instruct-2507"
+import httpx
 
-_model: AutoModelForCausalLM = None
-_tokenizer: AutoTokenizer = None
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+
+# Model ID as listed in Groq console — override via GROQ_MODEL env var
+LLM_MODEL_ID = os.environ.get("GROQ_MODEL", "qwen-qwen3-32b")
+
+_api_key: str = None
 
 
 def load():
-    """Load Qwen3-4B-Instruct 4-bit NF4. Requires CUDA."""
-    global _model, _tokenizer
-
-    if not torch.cuda.is_available():
+    """Read GROQ_API_KEY from environment. Must be set before starting the service."""
+    global _api_key
+    _api_key = os.environ.get("GROQ_API_KEY", "")
+    if not _api_key:
         raise RuntimeError(
-            "Qwen3-4B-Instruct requires a CUDA-capable GPU. "
-            "No GPU detected. Deploy this service on a machine with an NVIDIA GPU."
+            "GROQ_API_KEY environment variable is not set. "
+            "Set it before starting the service: export GROQ_API_KEY=gsk_..."
         )
-
-    quant_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.float16,
-    )
-    _tokenizer = AutoTokenizer.from_pretrained(LLM_MODEL_ID)
-    _model = AutoModelForCausalLM.from_pretrained(
-        LLM_MODEL_ID,
-        quantization_config=quant_config,
-        device_map="auto",
-    )
-    _model.eval()
 
 
 def generate_reply(messages: list, max_new_tokens: int = 200) -> str:
-    """Greedy generation for one chat exchange. Model must be loaded first."""
-    if _model is None:
+    """Send a chat request to Groq and return the assistant reply text."""
+    if not _api_key:
         raise RuntimeError("LLM not loaded. Call llm.load() at startup.")
 
-    encoded = _tokenizer.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        return_tensors="pt",
-        return_dict=True,
-    ).to(_model.device)
-
-    with torch.no_grad():
-        output = _model.generate(
-            **encoded,
-            max_new_tokens=max_new_tokens,
-            do_sample=False,
-            pad_token_id=_tokenizer.eos_token_id,
+    for attempt in range(4):
+        response = httpx.post(
+            GROQ_API_URL,
+            headers={
+                "Authorization": f"Bearer {_api_key}",
+                "Content-Type": "application/json",
+            },
+            json={
+                "model": LLM_MODEL_ID,
+                "messages": messages,
+                "max_tokens": max_new_tokens,
+                "temperature": 0,
+            },
+            timeout=60.0,
         )
+        if response.status_code == 429:
+            retry_after = float(response.headers.get("retry-after", 2 ** (attempt + 1)))
+            time.sleep(retry_after)
+            continue
+        response.raise_for_status()
+        content = response.json()["choices"][0]["message"]["content"]
+        # Qwen3 on Groq returns <think>...</think> before the actual reply — strip it.
+        content = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL).strip()
+        return content
 
-    prompt_length = encoded["input_ids"].shape[1]
-    return _tokenizer.decode(output[0][prompt_length:], skip_special_tokens=True)
+    raise RuntimeError("Groq API rate limit exceeded after 4 retries.")
 
 
 def is_loaded() -> bool:
-    return _model is not None
+    return bool(_api_key)

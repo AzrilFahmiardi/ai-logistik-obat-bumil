@@ -121,12 +121,12 @@ def _extract_llm(transcript: str) -> tuple[list, bool]:
         {"role": "system", "content": _system_prompt},
         {"role": "user", "content": f"Transcript: {transcript}"},
     ]
-    reply = _llm.generate_reply(messages, max_new_tokens=200)
+    reply = _llm.generate_reply(messages, max_new_tokens=800)
     parsed = _parse_extraction_response(reply)
     if parsed is None:
         messages.append({"role": "assistant", "content": reply})
         messages.append({"role": "user", "content": JSON_RETRY_MESSAGE})
-        parsed = _parse_extraction_response(_llm.generate_reply(messages, max_new_tokens=200))
+        parsed = _parse_extraction_response(_llm.generate_reply(messages, max_new_tokens=800))
     if parsed is None:
         return [], True
     return parsed, False
