@@ -1,3 +1,13 @@
+---
+title: MaternaLink AI
+emoji: 🏥
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # MaternaLink
 
 AI-driven maternal medicine logistics for Indonesian *puskesmas*, built for the ASEAN AI Hackathon 2026.
