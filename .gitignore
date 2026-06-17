@@ -221,3 +221,5 @@ __marimo__/
 .streamlit/secrets.toml
 # Local mirror of the Google Drive data folder (generated artifacts)
 drive_local/
+reference/*.png
+reference/*.pdf
