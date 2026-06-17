@@ -7,7 +7,7 @@ import httpx
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 # Model ID as listed in Groq console — override via GROQ_MODEL env var
-LLM_MODEL_ID = os.environ.get("GROQ_MODEL", "qwen-qwen3-32b")
+LLM_MODEL_ID = os.environ.get("GROQ_MODEL", "qwen/qwen3-32b")
 
 _api_key: str = None
 

@@ -9,6 +9,7 @@ Usage:
 import argparse
 import json
 import sys
+import time
 
 import httpx
 
@@ -19,6 +20,7 @@ PASS = "\033[92mPASS\033[0m"
 FAIL = "\033[91mFAIL\033[0m"
 
 _failures = 0
+_timings: list[tuple[str, float]] = []
 
 
 def check(name: str, ok: bool, detail: str = ""):
@@ -30,46 +32,69 @@ def check(name: str, ok: bool, detail: str = ""):
         _failures += 1
 
 
-def test_health(base: str):
+def timed_get(client: httpx.Client, url: str, **kwargs) -> tuple[httpx.Response, float]:
+    t0 = time.perf_counter()
+    r = client.get(url, **kwargs)
+    return r, round(time.perf_counter() - t0, 3)
+
+
+def timed_post(client: httpx.Client, url: str, **kwargs) -> tuple[httpx.Response, float]:
+    t0 = time.perf_counter()
+    r = client.post(url, **kwargs)
+    return r, round(time.perf_counter() - t0, 3)
+
+
+def record(label: str, elapsed: float):
+    _timings.append((label, elapsed))
+    print(f"  time: {elapsed}s")
+
+
+def test_health(client: httpx.Client, base: str):
     print("\n--- Health ---")
-    r = httpx.get(f"{base}/health", timeout=TIMEOUT)
+    r, t = timed_get(client, f"{base}/health", timeout=TIMEOUT)
+    record("GET /health", t)
     check("status 200", r.status_code == 200, f"got {r.status_code}")
     d = r.json()
-    check("status=ok", d.get("status") == "ok", str(d))
-    check("llm_loaded=true", d.get("llm_loaded") is True, str(d))
+    check("status=ok", d.get("status") == "ok")
+    check("llm_loaded=true", d.get("llm_loaded") is True)
 
 
-def test_master_data(base: str):
+def test_master_data(client: httpx.Client, base: str):
     print("\n--- Master Data ---")
-    r = httpx.get(f"{base}/api/v1/data/facilities", timeout=TIMEOUT)
+
+    r, t = timed_get(client, f"{base}/api/v1/data/facilities", timeout=TIMEOUT)
+    record("GET /data/facilities", t)
     check("facilities status 200", r.status_code == 200)
     fac = r.json()
     check("facilities count 30", len(fac) == 30, f"got {len(fac)}")
     check("facility_id field present", "facility_id" in fac[0])
 
-    r = httpx.get(f"{base}/api/v1/data/drugs", timeout=TIMEOUT)
+    r, t = timed_get(client, f"{base}/api/v1/data/drugs", timeout=TIMEOUT)
+    record("GET /data/drugs", t)
     check("drugs status 200", r.status_code == 200)
     check("drugs count 30", len(r.json()) == 30, f"got {len(r.json())}")
 
-    r = httpx.get(f"{base}/api/v1/data/conditions", timeout=TIMEOUT)
+    r, t = timed_get(client, f"{base}/api/v1/data/conditions", timeout=TIMEOUT)
+    record("GET /data/conditions", t)
     check("conditions status 200", r.status_code == 200)
     check("conditions count 16", len(r.json()) == 16, f"got {len(r.json())}")
 
 
-def test_layer1(base: str):
+def test_layer1(client: httpx.Client, base: str):
     print("\n--- Layer 1: Forecast ---")
 
-    r = httpx.get(f"{base}/api/v1/layer1/forecast/batch", timeout=TIMEOUT)
+    r, t = timed_get(client, f"{base}/api/v1/layer1/forecast/batch", timeout=TIMEOUT)
+    record("GET /layer1/forecast/batch (all)", t)
     check("batch status 200", r.status_code == 200)
     batch = r.json()
     check("batch non-empty", len(batch) >= 1, f"got {len(batch)}")
     check("predicted_closing_stock field present", "predicted_closing_stock" in batch[0])
 
-    r = httpx.get(
-        f"{base}/api/v1/layer1/forecast/batch",
-        params={"facility_id": "PKM-001"},
-        timeout=TIMEOUT,
+    r, t = timed_get(
+        client, f"{base}/api/v1/layer1/forecast/batch",
+        params={"facility_id": "PKM-001"}, timeout=TIMEOUT,
     )
+    record("GET /layer1/forecast/batch?facility_id=PKM-001", t)
     check("batch filter status 200", r.status_code == 200)
     filtered = r.json()
     check("batch filter facility_id correct", all(x["facility_id"] == "PKM-001" for x in filtered))
@@ -86,14 +111,15 @@ def test_layer1(base: str):
         "standard_daily_dose": 6,
         "treatment_duration_days": 7,
     }
-    r = httpx.post(f"{base}/api/v1/layer1/forecast", json=payload, timeout=TIMEOUT)
+    r, t = timed_post(client, f"{base}/api/v1/layer1/forecast", json=payload, timeout=TIMEOUT)
+    record("POST /layer1/forecast", t)
     check("forecast status 200", r.status_code == 200, f"got {r.status_code}")
     d = r.json()
     check("forecast_demand present", "forecast_demand" in d)
     check("total_requirement >= forecast_demand", d.get("total_requirement", 0) >= d.get("forecast_demand", 0))
 
 
-def test_layer0(base: str):
+def test_layer0(client: httpx.Client, base: str):
     print("\n--- Layer 0: Symptom Extraction ---")
     payload = {
         "period": "2025-03-01",
@@ -111,7 +137,8 @@ def test_layer0(base: str):
         ],
         "manual_diagnoses": None,
     }
-    r = httpx.post(f"{base}/api/v1/layer0/extract", json=payload, timeout=60.0)
+    r, t = timed_post(client, f"{base}/api/v1/layer0/extract", json=payload, timeout=60.0)
+    record("POST /layer0/extract (1 transcript)", t)
     check("extract status 200", r.status_code == 200, f"got {r.status_code}: {r.text[:200]}")
     if r.status_code != 200:
         return
@@ -127,8 +154,8 @@ def test_layer0(base: str):
     check("condition_estimates non-empty", len(estimates) >= 1, f"got {len(estimates)}")
 
 
-def test_layer2(base: str):
-    print("\n--- Layer 2: MILP Allocation (slow, ~5 min) ---")
+def test_layer2(client: httpx.Client, base: str):
+    print("\n--- Layer 2: MILP Allocation ---")
     payload = {
         "run_id": "test-run",
         "l1_forecasts": [
@@ -143,7 +170,8 @@ def test_layer2(base: str):
         ],
         "stockout_history": None,
     }
-    r = httpx.post(f"{base}/api/v1/layer2/allocate", json=payload, timeout=L2_TIMEOUT)
+    r, t = timed_post(client, f"{base}/api/v1/layer2/allocate", json=payload, timeout=L2_TIMEOUT)
+    record("POST /layer2/allocate (2 facilities, 2 drugs)", t)
     check("allocate status 200", r.status_code == 200, f"got {r.status_code}: {r.text[:300]}")
     if r.status_code != 200:
         return
@@ -162,13 +190,22 @@ def main():
     args = parser.parse_args()
 
     base = args.base.rstrip("/")
-    print(f"Testing: {base}")
+    print(f"Testing: {base}\n")
 
-    test_health(base)
-    test_master_data(base)
-    test_layer1(base)
-    test_layer0(base)
-    test_layer2(base)
+    with httpx.Client() as client:
+        test_health(client, base)
+        test_master_data(client, base)
+        test_layer1(client, base)
+        test_layer0(client, base)
+        test_layer2(client, base)
+
+    print(f"\n--- Inference times ---")
+    total = 0.0
+    for label, elapsed in _timings:
+        print(f"  {elapsed:>8.3f}s  {label}")
+        total += elapsed
+    print(f"  {'':->8}  --------")
+    print(f"  {total:>8.3f}s  total wall time")
 
     print(f"\n{'='*40}")
     if _failures == 0:
